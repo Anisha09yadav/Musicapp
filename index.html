@@ -10,7 +10,7 @@
       integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main_div">
@@ -18,9 +18,9 @@
         <h2 id="title">LOTUS LANE</h2>
         <h3 id="artist">The Loyalist</h3>
         <div class="img_container">
-          <img src="images/thapa-1.jpg" alt="" />
+          <img src="thapa-1.jpg" alt="" />
         </div>
-        <audio src="music/thapa-1.mp3"></audio>
+        <audio src="thapa-1.mp3"></audio>
 
         <!-- controls -->
         <div class="music_controls">
@@ -34,9 +34,9 @@
         <h2 id="title">sappheiros</h2>
         <h3 id="artist">Aurora</h3>
         <div class="img_container">
-          <img src="images/thapa-2.jpg" alt="" />
+          <img src="thapa-2.jpg" alt="" />
         </div>
-        <audio src="music/thapa-2.mp3"></audio>
+        <audio src="thapa-2.mp3"></audio>
 
         <!-- controls -->
         <div class="music_controls">
@@ -50,9 +50,9 @@
         <h2 id="title">Walking Firiri</h2>
         <h3 id="artist">Gorkhali Takma</h3>
         <div class="img_container">
-          <img src="images/thapa-3.jpg" alt="" />
+          <img src="thapa-3.jpg" alt="" />
         </div>
-        <audio src="music/thapa-3.mp3"></audio>
+        <audio src="thapa-3.mp3"></audio>
 
         <!-- controls -->
         <div class="music_controls">
@@ -115,9 +115,9 @@
       const loadSong = (songs) => {
         title.textContent = songs.title;
         artist.textContent = songs.artist;
-        // music.src = "music/" + songs.name + ".mp3";
-        music.src = `music/${songs.name}.mp3`;
-        img.src = "images/" + songs.name + ".jpg";
+        // music.src = "" + songs.name + ".mp3";
+        music.src = `${songs.name}.mp3`;
+        img.src = "" + songs.name + ".jpg";
       };
 
       songIndex = 0;
